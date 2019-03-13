@@ -1,0 +1,57 @@
+
+
+C:\Users\Administrator\Documents>go run main.go
+2019/03/12 23:59:09 STARTING
+2019/03/12 23:59:10 -----------------------------------------
+2019/03/12 23:59:10 OK MAKING A REQUEST TO URL: http://instance-data/latest/meta-data/instance-id which represents aws meta data in DNS val
+2019/03/12 23:59:10 Going to make a request with blacklist off which gets me the following result:
+2019/03/12 23:59:10 MADE REQUEST TO instance-data:80 WHICH RESOLVED TO IP ADDR: 169.254.169.254:80
+2019/03/12 23:59:10 RESP BODY IS:i-0f335593b6d3ac62f
+2019/03/12 23:59:10
+2019/03/12 23:59:10 Going to make a request with blacklist on which gets me the following result:
+2019/03/12 23:59:10 MADE REQUEST TO instance-data:80 WHICH RESOLVED TO IP ADDR: 169.254.169.254:80
+2019/03/12 23:59:10 OK The IP ADDR CONTAINED META DATA URL SO WE BLOCKING
+2019/03/12 23:59:10 GOT ERROR WITH MAKING A REQUEST TO URL WHILE BLOCKING, GOT ERROR: Get http://instance-data/latest/meta-data/instance-id: BLACKLIST WORKING
+2019/03/12 23:59:10 -----------------------------------------
+
+2019/03/12 23:59:10 -----------------------------------------
+2019/03/12 23:59:10 OK MAKING A REQUEST TO URL: http://[0:0:0:0:0:ffff:a9fe:a9fe]/latest/meta-data/instance-id which represents aws meta data in IPV6 val
+2019/03/12 23:59:10 Going to make a request with blacklist off which gets me the following result:
+2019/03/12 23:59:10 MADE REQUEST TO [0:0:0:0:0:ffff:a9fe:a9fe]:80 WHICH RESOLVED TO IP ADDR: 169.254.169.254:80
+2019/03/12 23:59:10 RESP BODY IS:i-0f335593b6d3ac62f
+2019/03/12 23:59:10
+2019/03/12 23:59:10 Going to make a request with blacklist on which gets me the following result:
+2019/03/12 23:59:10 MADE REQUEST TO [0:0:0:0:0:ffff:a9fe:a9fe]:80 WHICH RESOLVED TO IP ADDR: 169.254.169.254:80
+2019/03/12 23:59:10 OK The IP ADDR CONTAINED META DATA URL SO WE BLOCKING
+2019/03/12 23:59:10 GOT ERROR WITH MAKING A REQUEST TO URL WHILE BLOCKING, GOT ERROR: Get http://[0:0:0:0:0:ffff:a9fe:a9fe]/latest/meta-data/instance-id: BLACKLIST WORKING
+2019/03/12 23:59:10 -----------------------------------------
+
+2019/03/12 23:59:10 -----------------------------------------
+2019/03/12 23:59:10 OK MAKING A REQUEST TO URL: http://0251.0376.0251.0376 which represents aws meta data in Octal IP addr
+2019/03/12 23:59:10 Going to make a request with blacklist off which gets me the following result:
+2019/03/12 23:59:10 GOT ERROR WITH MAKING A REQUEST TO URL WHILE NOT BLOCKING, GOT ERROR: Get http://0251.0376.0251.0376: dial tcp: lookup 0251.0376.0251.0376: no such host
+2019/03/12 23:59:10
+2019/03/12 23:59:10 Going to make a request with blacklist on which gets me the following result:
+2019/03/12 23:59:10 GOT ERROR WITH MAKING A REQUEST TO URL WHILE BLOCKING, GOT ERROR: Get http://0251.0376.0251.0376: dial tcp: lookup 0251.0376.0251.0376: no such host
+2019/03/12 23:59:10 -----------------------------------------
+
+2019/03/12 23:59:10 -----------------------------------------
+2019/03/12 23:59:10 OK MAKING A REQUEST TO URL: http://361.596.361.596/ which represents aws meta data in Hexadecimal Val
+2019/03/12 23:59:10 Going to make a request with blacklist off which gets me the following result:
+2019/03/12 23:59:10 GOT ERROR WITH MAKING A REQUEST TO URL WHILE NOT BLOCKING, GOT ERROR: Get http://361.596.361.596/: dial tcp: lookup 361.596.361.596: no such host
+2019/03/12 23:59:10
+2019/03/12 23:59:10 Going to make a request with blacklist on which gets me the following result:
+2019/03/12 23:59:10 GOT ERROR WITH MAKING A REQUEST TO URL WHILE BLOCKING, GOT ERROR: Get http://361.596.361.596/: dial tcp: lookup 361.596.361.596: no such host
+2019/03/12 23:59:10 -----------------------------------------
+
+2019/03/12 23:59:10 -----------------------------------------
+2019/03/12 23:59:10 OK MAKING A REQUEST TO URL: http://169.254.169.254/latest/meta-data/instance-id which represents aws meta data in Ipv4 addr value
+2019/03/12 23:59:10 Going to make a request with blacklist off which gets me the following result:
+2019/03/12 23:59:10 MADE REQUEST TO 169.254.169.254:80 WHICH RESOLVED TO IP ADDR: 169.254.169.254:80
+2019/03/12 23:59:10 RESP BODY IS:i-0f335593b6d3ac62f
+2019/03/12 23:59:10
+2019/03/12 23:59:10 Going to make a request with blacklist on which gets me the following result:
+2019/03/12 23:59:10 MADE REQUEST TO 169.254.169.254:80 WHICH RESOLVED TO IP ADDR: 169.254.169.254:80
+2019/03/12 23:59:10 OK The IP ADDR CONTAINED META DATA URL SO WE BLOCKING
+2019/03/12 23:59:10 GOT ERROR WITH MAKING A REQUEST TO URL WHILE BLOCKING, GOT ERROR: Get http://169.254.169.254/latest/meta-data/instance-id: BLACKLIST WORKING
+2019/03/12 23:59:10 -----------------------------------------
